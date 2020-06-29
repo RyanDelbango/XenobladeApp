@@ -5,7 +5,7 @@
 .image {
     position: absolute;
     top: 35%;
-    left: 42%;
+    left: 41.5%;
     width: 300px;
     height: 300px;
     margin:-60px 0 0 -60px;
@@ -21,3 +21,19 @@
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.glow {
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #84d8be, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #84d8be;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #84d8be, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #84d8be, 0 0 80px #ff4da6;
+    }
+  }
