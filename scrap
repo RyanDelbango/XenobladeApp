@@ -1,0 +1,10 @@
+    <v-row class="text-center">
+      <v-col cols="12">
+        <v-img
+          src="https://vignette.wikia.nocookie.net/xenoblade/images/4/40/Core_Crystal.png/revision/latest/scale-to-width-down/340?cb=20200426104648"
+          class="my-3"
+          contain
+          height="200"
+        />
+      </v-col>
+    </v-row>
