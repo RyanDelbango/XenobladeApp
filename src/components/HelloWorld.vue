@@ -30,6 +30,8 @@
             <v-img
           v-if="Blade !== ''"
           :src="Picture"
+
+          class="pic"
           contain
             />
 
