@@ -29,7 +29,7 @@
             </button>
             <v-img
           v-if="Blade !== ''"
-          src="https://vignette.wikia.nocookie.net/xenoblade/images/e/ee/Pyra_pic.png/revision/latest/top-crop/width/360/height/360?cb=20170712045817"
+          :src="Picture"
           contain
             />
 
