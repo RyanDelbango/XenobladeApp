@@ -4,9 +4,10 @@
     <v-layout row wrap align-center col justify-center>
       <v-flex xs2>
         <h1 v-if="hover && Blade == ''" class="glow" style="font-family:helvetica; color:#84d8be; text-align:center; font_weight:thinner; opacity:90%">Click to Resonate!</h1>
-        <h1 class="glow" style="font-family:helvetica; color:#84d8be; text-align:center; font_weight:thinner; opacity:90%">{{ Blade }}</h1>
+        <h1 style="font-family:helvetica; color:#84d8be; text-align:center; font_weight:thinner; opacity:90%">{{ Blade }}</h1>
         <button 
         @click="submit"
+        v-if="Blade == ''"
         @mouseover="hover = true"
         @mouseleave="hover = false"
         v-on:click="1">
@@ -35,6 +36,16 @@
           contain
             />
 
+            <v-btn
+            v-if="Blade !== ''"
+            @click="reset"
+            dark
+            depressed
+            small
+            color="black"
+            >Resonate Again?
+            </v-btn>
+
       </v-flex>
     </v-layout>
   </v-container>
@@ -59,5 +70,9 @@ import axios from 'axios'
         this.Picture = response.data.Picture
       })
     },
+    reset () {
+      this.Blade = ''
+      this.hover = false
+      }
 }}
 </script>
