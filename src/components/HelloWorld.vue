@@ -28,6 +28,7 @@
 
 
             </button>
+            <transition name="fade">
             <v-img
           v-if="Blade !== ''"
           :src="Picture"
@@ -35,10 +36,22 @@
           class="pic"
           contain
             />
+            </transition>
+
+            <transition name="fade">
+            <v-img
+          v-if="Blade !== ''"
+          :src="Element"
+
+          class="elem"
+          contain
+            />
+            </transition>
 
             <v-btn
             v-if="Blade !== ''"
             @click="reset"
+            class="tip"
             dark
             depressed
             small
@@ -59,6 +72,7 @@ import axios from 'axios'
     return {
       Blade: '',
       Picture: '',
+      Element: '',
       hover: false,
     };
   },
@@ -68,6 +82,7 @@ import axios from 'axios'
       .then((response) => {
         this.Blade = response.data.Blade
         this.Picture = response.data.Picture
+        this.Element = response.data.Element
       })
     },
     reset () {

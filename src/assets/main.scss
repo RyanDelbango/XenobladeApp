@@ -16,10 +16,19 @@
 
 .pic {
   position: absolute;
-  top: 30%;
-  left: 41%;
+  top: 25%;
+  left: 30%;
   width: 300px;
   height: 300px;
+  margin:-60px 0 0 -60px;
+}
+
+.elem {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 40px;
+  height: 40px;
   margin:-60px 0 0 -60px;
 }
 
@@ -35,8 +44,10 @@
 
 
 .tip {
-    width: 300px;
-    height: 300px;
+    position: absolute;
+    top: 75%;
+    left: 43%;
+    width: 150px;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
