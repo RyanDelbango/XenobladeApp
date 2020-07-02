@@ -48,6 +48,23 @@
             />
             </transition>
 
+            <transition name="fade">
+            <v-img
+          v-if="Blade !== ''"
+          :src="Weapon"
+
+          class="weap"
+          contain
+            />
+            </transition>
+
+            <transition name="fade">
+            <span
+          v-if="Blade !== ''"
+          class="sum"
+            >{{ Summary }}</span>
+            </transition>
+
             <v-btn
             v-if="Blade !== ''"
             @click="reset"
@@ -73,6 +90,8 @@ import axios from 'axios'
       Blade: '',
       Picture: '',
       Element: '',
+      Weapon: '',
+      Summary: '',
       hover: false,
     };
   },
@@ -83,6 +102,8 @@ import axios from 'axios'
         this.Blade = response.data.Blade
         this.Picture = response.data.Picture
         this.Element = response.data.Element
+        this.Weapon = response.data.Weapon
+        this.Summary = response.data.Summary
       })
     },
     reset () {
