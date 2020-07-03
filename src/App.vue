@@ -51,19 +51,19 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <CoreCrystal/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import CoreCrystal from './components/CoreCrystal';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    CoreCrystal,
   },
 
   data: () => ({
