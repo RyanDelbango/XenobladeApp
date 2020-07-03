@@ -4,7 +4,7 @@
     <v-layout row wrap align-center col justify-center>
       <v-flex xs2>
         <h1 v-if="hover && Blade == ''" class="glow" style="font-family:helvetica; color:#84d8be; text-align:center; font_weight:thinner; opacity:90%">Click to Resonate!</h1>
-        <h1 style="font-family:helvetica; color:#84d8be; text-align:center; font_weight:thinner; opacity:90%">{{ Blade }}</h1>
+        <h1 class ="name" style="font-family:helvetica; color:#84d8be; text-align:center; font_weight:thinner; opacity:90%">{{ Blade }}</h1>
         <button 
         @click="submit"
         v-if="Blade == ''"
@@ -75,6 +75,25 @@
             color="black"
             >Resonate Again?
             </v-btn>
+
+            <transition name="fade">
+            <v-img
+          v-if="Blade !== ''"
+          src="https://i.ya-webdesign.com/images/nintendo-switch-logo-png-2.png"
+
+          class="swi"
+          contain
+            />
+            </transition>
+
+            <transition name="fade">
+            <a
+          v-if="Blade !== ''"
+          href="https://www.nintendo.com/games/detail/xenoblade-chronicles-2-switch/"
+          class="lin"
+          style="color:black;"
+            >Buy Xenoblade Chronicles 2 Now!</a>
+            </transition>
 
       </v-flex>
     </v-layout>
