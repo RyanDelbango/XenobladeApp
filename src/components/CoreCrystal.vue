@@ -116,7 +116,7 @@ import axios from 'axios'
   },
     methods: {
     submit () {
-      axios.get('http://127.0.0.1:5000/')
+      axios.get('https://apixeno.herokuapp.com/')
       .then((response) => {
         this.Blade = response.data.Blade
         this.Picture = response.data.Picture
