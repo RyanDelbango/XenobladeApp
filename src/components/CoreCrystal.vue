@@ -62,7 +62,7 @@
             <span
           v-if="Blade !== ''"
           class="sum"
-            >{{ Summary }}</span>
+            >"{{ Summary }}"</span>
             </transition>
 
             <v-btn
