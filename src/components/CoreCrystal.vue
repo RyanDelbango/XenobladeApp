@@ -1,6 +1,6 @@
 <template>
  <v-app style="background: linear-gradient(#020203, #4e4e5e, #b8b8bf);">
-  <v-container text-xs-center px-2>
+  <v-container text-xs-center px-2 style="width:80vw; height:80vh;">
     <v-layout row wrap align-center col justify-center>
       <v-flex xs2>
         <h1 v-if="hover && Blade == ''" class="glow" style="font-family:helvetica; color:#84d8be; text-align:center; font_weight:thinner; opacity:90%">Click to Resonate!</h1>
@@ -73,7 +73,7 @@
             depressed
             small
             color="black"
-            >Resonate Again?
+            ><span class="new">Resonate Again?</span>
             </v-btn>
 
             <transition name="fade">
@@ -112,6 +112,7 @@ import axios from 'axios'
       Weapon: '',
       Summary: '',
       hover: false,
+      screenWidth: screen.width
     };
   },
     methods: {
