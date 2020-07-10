@@ -17,7 +17,7 @@
   width: 13vw;
   height: 13vh;
   top: 0%;
-  left: 43%;
+  left: 42%;
 }
 
 .head3{
@@ -34,7 +34,7 @@
     display: flex;
     top: 35%;
     left: 44%;
-    width: 36.5vh;
+    width: 36.5vmin;
     height: 38vh;
     margin:-60px 0 0 -60px;
     -webkit-animation:spin 8s linear infinite;
@@ -71,7 +71,7 @@
 
 .swi {
   position: absolute;
-  top: 98%;
+  top: 90%;
   left: 31%;
   width: 7vw;
   height: 7vh;
@@ -80,7 +80,7 @@
 
 .lin {
   position: absolute;
-  top: 88%;
+  top: 80%;
   left: 60%;
   font-size: 2.5vmin;
   width: 20vw;
@@ -91,7 +91,7 @@
 
 .sum {
   position: absolute;
-  top: 18%;
+  top: 20%;
   left: 51%;
   width: 25vw;
   font-size: 2.75vmin;
@@ -127,7 +127,7 @@
 
 .tip {
     position: absolute;
-    top: 88%;
+    top: 80%;
     left: 35%;
     width: 20vw;
     height: 3vh;
@@ -140,7 +140,7 @@
     position: absolute;
     text-align: center;
     font-size: 5vh;
-    width: 30vw;
+    width: 26vw;
     top: 5%;
     left: 35%;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
