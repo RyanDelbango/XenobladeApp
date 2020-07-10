@@ -53,7 +53,7 @@
 
 .elem {
   position: absolute;
-  top: 21%;
+  top: 24%;
   left: 62%;
   width: 5vw;
   height: 5vh;
@@ -62,7 +62,7 @@
 
 .weap {
   position: absolute;
-  top: 21%;
+  top: 24%;
   left: 70%;
   width: 5vw;
   height: 5vh;
@@ -71,7 +71,7 @@
 
 .swi {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 31%;
   width: 7vw;
   height: 7vh;
@@ -80,7 +80,7 @@
 
 .lin {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 60%;
   font-size: 2.5vmin;
   width: 20vw;
@@ -113,8 +113,8 @@
 .name {
   position: absolute;
   font-size: 4vh;
-  top: 2%;
-  left: 43%;
+  top: 6%;
+  left: 44%;
   text-align: center;
 }
 
@@ -127,7 +127,7 @@
 
 .tip {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 35%;
     width: 20vw;
     height: 3vh;
@@ -139,7 +139,7 @@
 .glow {
     position: absolute;
     text-align: center;
-    font-size: 5vh;
+    font-size: 5vmin;
     width: 26vw;
     top: 5%;
     left: 35%;
