@@ -1,6 +1,6 @@
 # xenobladeapp
 
-![](Xenoblade.gif)
+![](Xenoblade2.gif)
 
 Demo at: 
 http://xenobladeapp.herokuapp.com
